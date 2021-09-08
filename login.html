@@ -1,0 +1,95 @@
+<?php
+include("connection.php");
+error_reporting(0);
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Log In</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" href="img/images.jpg">
+</head>
+<body>
+
+
+  <!------------------------menu------------>
+  <section id="menu">
+  
+      <nav id="navbar-example2" class="navbar navbar-light bg-light">
+        <img src="img/images.jpg">
+  <a class="navbar-brand" href="#"> <b>Explore Bangladesh </a>
+  <ul class="nav nav-pills">
+     <li class="nav-item">
+      <a class="nav-link" href="index.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="login.html">login</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#us">about us</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#accessories">Accesorries</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"> Spots </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="Hill_side.html">Hill side</a>
+         <a class="dropdown-item" href="Sea_beach.html">Sea beach</a>
+         <a class="dropdown-item" href="Dhaka.html">Inside Dhaka</a>
+
+      </div>
+    </li>
+  </ul>
+</nav>
+<hr>
+	<!--------------form------------->
+	<section id="form">
+		<div class="container">
+			<form action="connection.php" method="post">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" name="Email"  id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+   </div>
+  <br>
+   <div class="form-group">
+    <label for="exampleInputEmail1">Enter your name : </label>
+    <input type="name" class="form-control"  name="name"  id="exampleInputname" aria-describedby="nameHelp" placeholder="Enter your name">
+   </div>
+  <br>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Enter your address : </label>
+    <input type="address" class="form-control" name="address" id="exampleInputaddress" aria-describedby="addresslHelp" placeholder="Enter your address">
+   </div>
+  <br>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" name="password" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <br>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Re-enter Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="rePassword">
+  </div>
+  <br>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary" style="
+    color: #19bd0d;
+    background-color: rgba(230, 213, 234, 0.9);">Submit</button>
+</form>			
+		</div>
+		
+	</section>
+
+
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+	<script type="text/javascript" src="js/isotope.function.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
